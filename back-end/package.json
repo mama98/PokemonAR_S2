@@ -1,8 +1,8 @@
 {
   "name": "back-end",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "pokemon AR back end",
-  "main": "index.js",
+  "type":"module",
   "scripts": {
     "start": "npm run dev",
     "dev": "NODE_ENV=development nodemon --exec babel-node ./bin/www",
@@ -12,28 +12,16 @@
     "copy": "shx mkdir dist && shx cp -r public dist/",
     "build": "babel \"./{,!(dist|node_modules)/**/}*.js\" bin/www -d dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mama98/PokemonAR_S2.git"
-  },
-  "keywords": [
-    "porject",
-    "ECE",
-    "mineure",
-    "pokemon",
-    "Augmented",
-    "Reality"
-  ],
-  "author": "team BouBouteille",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mama98/PokemonAR_S2/issues"
-  },
-  "homepage": "https://github.com/mama98/PokemonAR_S2#readme",
   "private": true,
-  "dependencies": {
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
     "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-plugin-root-import": "^6.4.1",
     "express": "^4.17.1",
-    "nodemon": "^1.19.4"
+    "nodemon": "^1.19.4",
+    "npm-run-all": "^4.1.5",
+    "shx": "^0.3.2"
   }
 }
