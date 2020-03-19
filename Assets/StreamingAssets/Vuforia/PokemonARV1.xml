@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Squirtle_good" size="1.000000 1.329513" />
+    <ImageTarget name="Bulbasaur_good" size="1.000000 1.401685" />
+    <ImageTarget name="salameche_reptincelle_dracaufeu1" size="1.000000 0.750000" />
+    <ImageTarget name="salameche_reptincelle_dracaufeu" size="0.200000 0.150000" />
+    <ImageTarget name="Carte-Pokemon-Salameche-11-181" size="0.200000 0.266750" />
+    <ImageTarget name="salameche" size="0.200000 0.283025" />
+    <ImageTarget name="pokemon-charmander" size="0.200000 0.280000" />
+    <ImageTarget name="Pokemon-Squirtle" size="500.000000 700.000000" />
+  </Tracking>
+</QCARConfig>
