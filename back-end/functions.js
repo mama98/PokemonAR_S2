@@ -11,8 +11,9 @@ var docClient = new AWS.DynamoDB.DocumentClient();
     router.[type de requete] : on met l'adresse, donc comment on va y accéder exemple : "localhost:3000/test"
     puis on met la fonction donc ce qu'elle va faire, ce qu'elle va envoyer et recevoir de la BDD
 */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
   //Ici on récupère de la base de donnée
+  console.log(req);
   let params = {
     TableName:"Pokedex",
     Key:{
@@ -28,7 +29,9 @@ router.get('/', function(req, res, next) {
     }
   });
 });
-
+router.get('/test', function(req, res, next){
+    res.json({req:req});
+});
 router.put('/test', function(req, res, next){
     //Ici on envoie dans la© base de donnée
 });
