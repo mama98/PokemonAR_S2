@@ -1,4 +1,4 @@
-#get {ADRESSE}/
+#get {ADRESSE}/ debutcombat
 À envoyer comme info :
     {
         "uid":"identifiant_du_user",
@@ -11,7 +11,7 @@ Ce qui sera reçu :
     }
     "pkmnB":{
         (Pokémon de l'adversaire)
-        nom, identifiant, et plein d'autres infos du pokémon comme son niveau, ses attaques disponibles etc...
+        nom, identifiant, PV, et pas grand chose d'autre
     }
 }
 
@@ -24,11 +24,8 @@ Ce qui sera reçu :
 }
 Ce qui sera reçu:
 {
-    "pkmnA":{
-        pas sur car pas forcément modifié
-    }
     "pkmnB":{
-        toutes les infos du pokémon, pour actualiser ses pvs
+        toutes les infos du pokémon, pricipalement ses pvs
     }
 }
 #get {ADRESSE}/atk
